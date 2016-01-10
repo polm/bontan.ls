@@ -63,21 +63,31 @@ You can pass `-r` to return `innerHTML` instead of `textContent`.
 
 ### mikan
 
-This attempts to replicate some of the magic of [import.io](http://import.io) using a simple trick - usually, the most interesting list on a page is the longest one. Here's what happens when you point it at Hacker News:
+This attempts to replicate some of the magic of [import.io](http://import.io) using a simple trick - usually, the most interesting list on a page is the longest one. Here's what happens when you point it at Stack Overflow:
     
+    mikan 'http://stackoverflow.com'
+       0 votes   1 answer   4 views     Unique index not working  ruby-on-rails unique-constraint database-indexes   answered 1 min ago Thong Kuah 1,960   
+       0 votes   0 answers   2 views     fprintf giving me a blank .txt file in MATLAB  matlab   asked 1 min ago physicist82 1   
+       0 votes   0 answers   11 views     Node.js / Inheritance of variables and modules  javascript node.js inheritance   modified 1 min ago MiddleWare 138   
+       5 votes   2 answers   30 views     Global Events in Angular 2  angular2   modified 1 min ago pixelbits 14.5k   
+       0 votes   1 answer   5 views     Running “mvn test site” giving [ERROR] Failed to execute goal org.apache.maven.plugins:maven-site-plugin:3.3:site (default-site) on project  maven selenium xslt   modified 1 min ago Tunaki 29k   
+     etc.
+
+Or Hacker News:
+
     mikan 'http://news.ycombinator.com'
-
-           1.      Tesla Model S can now park itself (techcrunch.com)
-             146 points by prostoalex 6 hours ago  | 86 comments              
+     1.      The Trouble with the TPP, Day 5: Rights Holders “Shall” vs. Users “May” (michaelgeist.ca)
+     46 points by walterbell 3 hours ago  | discuss
     
-           2.      The Trouble with the TPP, Day 5: Rights Holders “Shall” vs. Users “May” (michaelgeist.ca)
-             26 points by walterbell 2 hours ago  | discuss              
+     2.      Tesla Model S can now park itself (techcrunch.com)
+     151 points by prostoalex 6 hours ago  | 89 comments
     
-           3.      Insiders say what's going on inside $11 bln Pinterest – and it's not all good (businessinsider.com)
-             8 points by prostoalex 35 minutes ago  | discuss              
-    etc.
+     3.      Nvidia GPUs can break Chrome's incognito mode (charliehorse55.wordpress.com)
+     374 points by charliehorse55 11 hours ago  | 120 comments
 
-# Licence
+     etc.
+
+# License
 
 WTFPL, do as you please.
 
