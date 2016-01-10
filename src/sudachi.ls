@@ -2,17 +2,11 @@
 request = require \request
 domino = require \domino
 URL = require \url
+{get-printer} = require \./shared
 
-# by default print just the text content
-print = -> console.log it.textContent.trim!
+print = get-printer process.argv[2 to]
 
-# optionally print raw html
-if process.argv.2 == \-r
-  process.argv.shift!
-  print = -> console.log it.innerHTML
-
-url = process.argv.2
-sel = process.argv.3
+[url, sel] = process.argv[-2 to]
 domain = URL.parse(url).host
 request url, (error, response, body) ->
   if error

@@ -14,3 +14,5 @@ main = ->
       process.exit 1
     win = domino.create-window body
     render-summary win
+
+main!

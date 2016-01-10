@@ -3,16 +3,21 @@ request = require \request
 domino = require \domino
 URL = require \url
 
+export get-printer = (opts) ->
+  if opts.0 == \-r # raw output
+    return -> console.log it.innerHTML
+  return -> console.log it.textContent.trim!
+
 export render-all = (win) ->
   nodes = win.document.query-selector-all "H1, H3, P, IMG, LI"
   for node in nodes
     console.log switch node.tag-name
-    | \H1 => '# ' + node.innerText + "\n"
-    | \H3 => '### ' + node.innerText + "\n"
+    | \H1 => '# ' + node.text-content + "\n"
+    | \H3 => '### ' + node.text-content + "\n"
     | \IMG => node.src + "\n"
-    | \LI => node.innerHTML
-    | \P => node.innerHTML + "\n"
-    default => node.innerHTML
+    | \LI => node.text-content
+    | \P => node.text-content + "\n"
+    default => node.text-content
 
 export render-summary = (win) ->
   console.log win.document.title
