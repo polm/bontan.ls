@@ -7,7 +7,8 @@
 
 
 Bontan is a simple scraper with specialized behavior for some sites (like
-Wikipedia) and smart fallbacks for others. 
+Wikipedia) and smart fallbacks for others. This repository also includes other
+scraping utilities.
 
 WTFPL, do as you like.
 
