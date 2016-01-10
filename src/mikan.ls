@@ -30,5 +30,5 @@ request url, (error, response, body) ->
 
   for kid in maxkids.children
     if kid.children.length = commoncount
-      console.log kid.text-content.split("\n").join(' ')
+      console.log kid.text-content.split("\n").map(-> it.trim!).join(' ')
 
