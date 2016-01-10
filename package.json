@@ -1,0 +1,38 @@
+{
+  "name": "bontan",
+  "version": "1.0.0",
+  "description": "Utility scripts for scraping",
+  "main": "bontan.js",
+  "directories": {
+    "test": "test"
+  },
+  {"bin":{
+    "bontan":"./bin/bontan",
+    "sudachi":"./bin/sudachi",
+    "kinkan":"./bin/kinkan",
+    "mikan":"./bin/mikan"
+  }},
+  "dependencies": {
+    "domino": "^1.0.21",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polm/bontan.git"
+  },
+  "keywords": [
+    "scraping",
+    "html",
+    "css"
+  ],
+  "author": "Paul O'Leary McCann",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/polm/bontan/issues"
+  },
+  "homepage": "https://github.com/polm/bontan#readme"
+}
