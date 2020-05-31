@@ -1,3 +1,5 @@
+**Note:** This project is abandoned, but I rewrote the parts I was still using. See [here](https://github.com/polm/bontan).
+
 
      _                 _              
     | |__   ___  _ __ | |_ __ _ _ __  
