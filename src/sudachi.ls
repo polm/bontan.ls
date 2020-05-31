@@ -8,7 +8,10 @@ print = get-printer process.argv[2 to]
 
 [url, sel] = process.argv[-2 to]
 domain = URL.parse(url).host
-request url, (error, response, body) ->
+opts =
+  url: url
+  'User-Agent': 'Firefox'
+request opts, (error, response, body) ->
   if error
     console.error error
     process.exit 1
